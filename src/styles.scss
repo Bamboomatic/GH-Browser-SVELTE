@@ -1,0 +1,40 @@
+$widescreen: 1280px;
+@import "~bulma/sass/utilities/_all.sass";
+@import "~bulma/sass/base/_all.sass";
+@import "~bulma/sass/form/_all.sass";
+@import "~bulma/sass/elements/_all.sass";
+@import "~bulma/sass/grid/columns.sass";
+@import "~bulma/sass/components/navbar.sass";
+@import "~bulma/sass/components/media.sass";
+
+@import "~bulma-timeline";
+@import "~bulma-tooltip";
+
+.navbar {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 8px;
+}
+
+.gh-username img {
+  width: 32px;
+  margin-right: 0.5rem;
+}
+
+#profile-bio {
+  margin-top: 10px;
+}
+
+.timeline .timeline-item {
+  padding-bottom: 1em;
+}
+
+@media screen and (min-width: 1280px) {
+  body .column.is-one-third-widescreen {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .column {
+    margin: 1rem;
+  }
+}
